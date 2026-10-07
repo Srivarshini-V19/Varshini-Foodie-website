@@ -19,7 +19,7 @@ function App() {
                 "container main bg-background-secondary",
             ].join(" ")}
         >
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <FoodProvider>
                     <Switch>
                         <Route path="/" exact component={Page} />
